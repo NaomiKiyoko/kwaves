@@ -1,3 +1,4 @@
+'use client'
 import { type Song } from '@/lib/data'
 
 export default function ChartWatch.tsx({ songs }: { songs: Song[] }) {
