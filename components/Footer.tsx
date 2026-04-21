@@ -1,3 +1,4 @@
+'use client'
 const cols = {
   Sections: ['Music', 'Concert', 'Drama', 'Charts', 'Fan Meeting'],
   Company:  ['About Us', 'Contact', 'Careers', 'Advertise'],
