@@ -1,9 +1,8 @@
 'use client'
-export default function TopStrip.tsx() {
+export default function TopStrip() {
   const date = new Date().toLocaleDateString('en-US', {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
   })
-
   return (
     <div style={{
       background: 'var(--ink)',
@@ -22,7 +21,8 @@ export default function TopStrip.tsx() {
       </div>
       <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
         {['𝕏', '◎', '♪', '▶'].map((icon, i) => (
-          <span key={i} style={{ fontSize: '.85rem', cursor: 'pointer', opacity: .6, transition: 'opacity .15s' }}
+          <span key={i}
+            style={{ fontSize: '.85rem', cursor: 'pointer', opacity: .6, transition: 'opacity .15s' }}
             onMouseEnter={e => (e.currentTarget.style.opacity = '1')}
             onMouseLeave={e => (e.currentTarget.style.opacity = '.6')}
           >{icon}</span>
