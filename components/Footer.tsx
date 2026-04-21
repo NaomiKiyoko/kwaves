@@ -5,7 +5,7 @@ const cols = {
   Legal:    ['Terms of Service', 'Privacy Policy', 'Cookie Policy'],
 }
 
-export default function Footer.tsx() {
+export default function Footer() {
   return (
     <footer style={{ background: 'var(--ink)', marginTop: '4rem' }}>
       <div style={{
@@ -21,7 +21,6 @@ export default function Footer.tsx() {
             Your daily home for K-pop culture, music, drama, and everything Hallyu.
           </p>
         </div>
-
         {Object.entries(cols).map(([heading, links]) => (
           <div key={heading}>
             <h4 style={{ fontSize: '.65rem', fontWeight: 700, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,.35)', marginBottom: '1.1rem' }}>
@@ -40,7 +39,6 @@ export default function Footer.tsx() {
           </div>
         ))}
       </div>
-
       <div style={{
         maxWidth: 'var(--max)', margin: '0 auto',
         padding: '1.4rem clamp(1.25rem,4vw,3rem)',
@@ -56,7 +54,6 @@ export default function Footer.tsx() {
               border: '1px solid rgba(255,255,255,.12)',
               display: 'flex', alignItems: 'center', justifyContent: 'center',
               fontSize: '.85rem', cursor: 'pointer', color: 'rgba(255,255,255,.4)',
-              transition: 'border-color .15s, color .15s',
             }}
               onMouseEnter={e => { const el = e.currentTarget; el.style.color = '#fff'; el.style.borderColor = 'rgba(255,255,255,.4)' }}
               onMouseLeave={e => { const el = e.currentTarget; el.style.color = 'rgba(255,255,255,.4)'; el.style.borderColor = 'rgba(255,255,255,.12)' }}
