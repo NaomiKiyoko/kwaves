@@ -1,4 +1,4 @@
-export default function TopStrip() {
+export default function TopStrip.tsx() {
   const date = new Date().toLocaleDateString('en-US', {
     weekday: 'long', year: 'numeric', month: 'long', day: 'numeric',
   })
