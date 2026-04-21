@@ -4,7 +4,7 @@ const cols = {
   Legal:    ['Terms of Service', 'Privacy Policy', 'Cookie Policy'],
 }
 
-export default function Footer() {
+export default function Footer.tsx() {
   return (
     <footer style={{ background: 'var(--ink)', marginTop: '4rem' }}>
       <div style={{
