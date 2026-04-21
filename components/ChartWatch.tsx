@@ -1,6 +1,6 @@
 import { type Song } from '@/lib/data'
 
-export default function ChartWatch({ songs }: { songs: Song[] }) {
+export default function ChartWatch.tsx({ songs }: { songs: Song[] }) {
   return (
     <section style={{
       background: 'var(--warm)', border: '1px solid var(--border)',
