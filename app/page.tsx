@@ -9,7 +9,6 @@ import Newsletter    from '@/components/Newsletter'
 import Footer        from '@/components/Footer'
 import { getLatestArticles, getPopularTags, getPopularSongs } from '@/lib/api'
 
-// Server component — fetches at build/request time
 export default async function Home() {
   const [latestRes, tagsRes, songsRes] = await Promise.all([
     getLatestArticles({ limit: 6, offset: 0 }),
@@ -18,7 +17,7 @@ export default async function Home() {
   ])
 
   return (
-    <>
+    <div>
       <TopStrip />
       <Navbar />
       <main style={{ maxWidth: 'var(--max)', margin: '0 auto', padding: '0 clamp(1.25rem,4vw,3rem) 60px' }}>
@@ -30,7 +29,6 @@ export default async function Home() {
         <Newsletter />
       </main>
       <Footer />
-    </>
+    </div>
   )
 }
-
