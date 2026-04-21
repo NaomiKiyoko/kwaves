@@ -3,6 +3,7 @@ export type Article = {
   title: string
   excerpt: string
   topic: string
+  body?: string
   tags: string[]
   author: { id: string; name: string }
   publishedAt: string
